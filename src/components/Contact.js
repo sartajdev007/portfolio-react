@@ -35,7 +35,7 @@ export const ContactUs = () => {
                     <div>
                         <label>Message</label>
                         <br />
-                        <textarea name="message" cols='88' rows='5' className='textarea textarea-bordered' />
+                        <textarea name="message" className='textarea textarea-bordered w-full h-36' />
                     </div>
                     <input type="submit" value="Send" className='btn btn-primary' />
                 </form>
