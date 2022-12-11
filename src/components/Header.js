@@ -1,6 +1,5 @@
 import React from 'react';
-import img from '../assets/myImg.png'
-import TypeWriterEffect from 'react-typewriter-effect';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return (
@@ -11,31 +10,15 @@ const Header = () => {
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a href='/' className='text-rose-500 font-semibold'>Home</a></li>
+                        <li><Link to='' className='text-fuchsia-500 font-semibold'>Home</Link></li>
                         <li>
-                            <a href="/" className='text-rose-500 font-semibold'>Projects</a>
+                            <Link to="#projects" className='text-fuchsia-500 font-semibold' smooth>Projects</Link>
                         </li>
-                        <li><a href='/' className='text-rose-500 font-semibold'>Skills</a></li>
+                        <li><Link to='#skills' className='text-fuchsia-500 font-semibold' smooth>Skills</Link></li>
+                        <li><Link to='#about' className='text-fuchsia-500 font-semibold' smooth>About</Link></li>
+                        <li><Link to='#contact' className='text-fuchsia-500 font-semibold' smooth>Contact</Link></li>
+                        <li><Link to='/blogs' className='text-fuchsia-500 font-semibold'>Blogs</Link></li>
                     </ul>
-                </div>
-            </div>
-            {/* banner section */}
-            <div className="hero bg-base-200" style={{ background: 'url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg?size=626&ext=jpg&ga=GA1.2.973079058.1669301769)', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-                <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-                    <img src={img} className="rounded-lg shadow-2xl " alt='' />
-                    <div className='lg:mr-96'>
-                        <h1 className='text-7xl font-bold text-green-400'>
-                            <h1 className='text-4xl text-rose-500'>Hello!! This is </h1>
-                            <TypeWriterEffect
-                                startDelay={100}
-                                cursorColor="red"
-                                text="SARTAJ KAISER"
-                                typeSpeed={100}
-                            />
-                        </h1>
-                        <p className="py-6 text-3xl text-fuchsia-500 font-bold">Front End Web Developer</p>
-                        <button className="btn btn-primary"><a href="https://drive.google.com/file/d/15-Esmr_KHhbNOTHg4KF5xKRlGzTjz3Uk/view?usp=share_link" target='_blank' rel='noreferrer noopener'>See Resume</a></button>
-                    </div>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ import img9 from '../assets/bootstrap.png'
 
 const Skills = () => {
     return (
-        <div className='mt-10'>
+        <div className='mt-10' id='skills'>
             <h1 className='text-5xl px-12 font-bold text-emerald-500'>Skills</h1>
             <p className='text-lg px-12 pt-4 font-semibold text-fuchsia-600 italic'>Skills that I am perfecting</p>
             <div className='grid grid-cols-4 gap-8 pt-5 p-10 mt-5 justify-items-center bg-base-200 mx-10 shadow-lg shadow-emerald-200'>

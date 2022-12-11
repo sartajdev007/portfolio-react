@@ -1,20 +1,15 @@
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import About from './components/About';
-import { ContactUs } from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import router from './Router/router';
+
+
+
+
 
 function App() {
   return (
     <div className='container mx-auto'>
-      <Header></Header>
-      <Projects></Projects>
-      <About></About>
-      <Skills></Skills>
-      <ContactUs></ContactUs>
-      <Footer></Footer>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

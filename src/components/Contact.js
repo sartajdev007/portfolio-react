@@ -17,11 +17,11 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className='mt-10'>
+        <div className='mt-10' id='contact'>
             <h1 className='text-5xl px-12 font-bold text-emerald-500'>Contact Me</h1>
             <p className='text-lg px-12 pt-4 font-semibold text-fuchsia-600 italic'>Please fill up the form to get in touch with me</p>
             <div className='flex justify-center pt-10'>
-                <form className='border-2 rounded-xl p-10 shadow-xl w-[700px] shadow-teal-200' ref={form} onSubmit={sendEmail}>
+                <form className='bg-base-100 border-2 rounded-xl p-10 shadow-xl w-[700px] shadow-teal-200' ref={form} onSubmit={sendEmail}>
                     <div>
                         <label>Name</label>
                         <br />
